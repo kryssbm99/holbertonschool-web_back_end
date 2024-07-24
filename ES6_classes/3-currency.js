@@ -38,3 +38,4 @@ export default class Currency {
         return name;
       }
     }
+    
