@@ -2,8 +2,8 @@
 """
 This module provides a type-annotated function to return the floor of a float.
 """
-
 import math
+
 
 def floor(n: float) -> int:
     """

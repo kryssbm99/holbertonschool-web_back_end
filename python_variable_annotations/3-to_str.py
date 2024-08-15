@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """
-This module provides a type-annotated function to return the string representation of a float.
+Module provides a T-A function to return the string representation of a float.
 """
 import math
+
 
 def to_str(n: float) -> str:
     """
