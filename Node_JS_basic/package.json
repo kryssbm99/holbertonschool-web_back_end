@@ -1,11 +1,10 @@
 {
   "name": "node_js_basics",
   "version": "1.0.0",
-  "description": "Working!",
+  "description": "",
   "main": "index.js",
-  "type": "module",
   "scripts": {
-    "lint": "eslint",
+    "lint": "./node_modules/.bin/eslint",
     "check-lint": "lint [0-9]*.js",
     "test": "./node_modules/mocha/bin/mocha --require @babel/register --exit",
     "dev": "nodemon --exec babel-node ./full_server/server.js ./database.csv"
@@ -16,7 +15,7 @@
     "chai": "^4.4.1",
     "chai-http": "^4.3.0",
     "express": "^4.21.0",
-    "mocha": "^10.7.3",
+    "mocha": "^6.2.3",
     "request": "^2.88.2",
     "sinon": "^7.5.0"
   },
@@ -26,12 +25,11 @@
     "@babel/node": "^7.25.0",
     "@babel/preset-env": "^7.25.4",
     "@babel/register": "^7.24.6",
-    "@eslint/js": "^9.10.0",
-    "eslint": "^8.57.1",
-    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.29.1",
-    "eslint-plugin-jest": "^28.8.3",
-    "nodemon": "^3.1.5"
-  },
-  "keywords": []
+    "eslint-plugin-jest": "^22.21.0",
+    "lint": "*",
+    "nodemon": "^2.0.22"
+  }
 }
