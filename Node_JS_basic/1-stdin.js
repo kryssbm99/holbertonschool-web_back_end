@@ -4,7 +4,8 @@ console.log("Welcome to Holberton School, what is your name?");
 // Listen for user input from stdin
 process.stdin.on('data', (data) => {
   const name = data.toString().trim();  // Get user input and trim any extra spaces/newlines
-  console.log(`Your name is: ${name}`);
+  // Ensure the output ends with \r for cross-platform consistency
+  console.log(`Your name is: ${name}\r`);
   process.stdin.end();  // End the input process
 });
 
@@ -12,3 +13,4 @@ process.stdin.on('data', (data) => {
 process.stdin.on('end', () => {
   console.log("This important software is now closing");
 });
+
