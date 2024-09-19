@@ -1,0 +1,2 @@
+// This command searches for a specific db
+db.school.find({ name: "Holberton school" })

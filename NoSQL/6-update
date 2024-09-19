@@ -1,0 +1,6 @@
+// This command updates all documents with name=holberton
+db.school.update(
+    { "name": "Holberton school" },
+    { $set: { "address": "972 Mission street" } },
+    { multi: true }
+)
